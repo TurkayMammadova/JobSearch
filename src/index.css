@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Lobster&family=Lora:ital,wght@0,400;0,500;1,400;1,500;1,700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700&family=Poppins:ital,wght@1,300;1,800&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap');
+
+
+*,::after,::before{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: inherit;
+
+  
+}
+
+html{
+  font-size: 62,5%;
+}
+
+body{
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: var(--color_bg);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Montserrat',sans-serif,serif;
+
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+li{
+  list-style: none;
+}
+
+.container{
+  display: flex;
+}
+
+
+::-webkit-scrollbar {
+  width: 4px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.list_block {
+  height: 100vh;
+  border-right: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+}
+
+@media (max-width: 1099px){
+.list_block {
+    height: auto;
+    flex: 1;
+    width: 100%;
+    border-right: 0;
+    flex: 0 0 100%;
+    min-height: 100%;
+}}
+
+.list__item__body {
+  display: flex;
+  width: calc(100% - 6rem);
+  justify-content: unset;
+  padding-right: 1rem;
+  font-size: 1.4rem;
+  color: var(--color_span);
+  flex: 1;
+}
+
+.list__item {
+  min-height: 70px;
+   padding-left: 1rem;
+   display: flex;
+   width:100%;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   box-shadow: 0 0.5px 0 0 #eaeaea, 0 0.5px 0 0 #eaeaea inset;
+}
+  
+.list__item__text {
+  flex: 1;
+  color: var(--color_span), im !important;
+  padding: 1.2rem 0;
+  display: block !important;
+  font-size: 0.8rem;
+}
+
+.list__item__title {
+  display: flex;
+  align-items: baseline;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+  color: var(--color_title);
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.list__item__end  {
+  font-size: 0.8rem;
+  text-transform: lowercase;
+  display: flex;
+  align-items: center;
+  color:gray;
+  position: relative;
+  z-index: 3;
+  justify-content: center;
+
+  transition: .1s linear;
+}
+
+.list__item__end ul li Link {
+  margin-right: 0.6rem;
+}
+.list__item__end span {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+.list__item__end ul li:after {
+  content: "";
+  border-right: 1px solid var(--color_span_info);
+  height: 1.2rem;
+  margin-left: 1rem;
+}
+
+.list__item__end a {
+  position: relative;
+  z-index: 3;
+  justify-content: center;
+  color: var(--color_span_info);
+  transition: 0.1s linear;
+  font-size: 17px;
+}
+
+.list__item__end ul li {
+  display: flex;
+  align-items: center;
+  text-indent: unset !important;
+  padding-right: 1rem;
+}
+
+
+
+.list__item__end ul {
+  display: flex;
+}
+
+.list__item__logo {
+  margin: 0;
+  margin-right: 1.2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  border-radius: 50%;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  
+}
+.menu {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 1.8rem;
+  border-right: 1px solid #eaeaea;
+  max-width: 261px;
+ 
+}
+
+
+@media (max-width: 1099px){
+.menu {
+    position: fixed;
+    left:0;
+    background: var(--color_bg);;
+    z-index: 15;
+    padding-top: 20px;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    transition: .3s linear;
+}}
+@media (max-width: 1440px){
+.menu {
+    width: 25rem;
+}}
+
+
+
+
+.about {
+  padding: 4rem 3.2rem;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.section_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color:var(--color_title);
+  display: block;
+  margin: 0 0 2rem 0;
+}

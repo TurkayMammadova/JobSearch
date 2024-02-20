@@ -1,0 +1,48 @@
+
+
+.section_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color:var(--color_title);
+  display: block;
+  margin: 0 0 2rem 0;
+}
+
+.contacts__item:not(:last-child) {
+  padding-bottom: 2.2rem;
+  margin-bottom: 2.4rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.contacts__text {
+  display: flex;
+}
+
+.contacts__text h2 {
+  margin-right: 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+h2{
+  display: block;
+  font-weight: 400;
+  margin: 0;
+  color:var(--color_title);
+}
+
+.contacts__text li {
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+  color:var(--color_text);
+  padding-left: 55px;
+}
+
+.contacts__map {
+  border-radius: 10px;
+  margin-top: 2.2rem;
+  
+}
+
+.contacts__text li a {
+  color: inherit;
+}
+
